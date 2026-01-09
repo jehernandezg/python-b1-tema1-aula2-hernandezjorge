@@ -65,10 +65,16 @@ Exemple:
 
 import math
 
+from pandas.io.formats.format import return_docstring
+
+
 def calculate_angle(angle):
     # Write here your code
+    sin = math.sin(math.radians(angle))
+    return round(sin, 2)
+
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(calculate_angle(270))
+print(calculate_angle(270))
