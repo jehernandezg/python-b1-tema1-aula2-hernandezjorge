@@ -45,10 +45,18 @@ Exemple:
 """
 
 
+from ast import Mult
+from audioop import mul
+
+from numpy.random import multivariate_normal
+
+
 def mult_recursive(value, times):
     # Write here your code
     if times == 1:
         return value
+    else:
+        return value + mult_recursive(value, times - 1)
     pass
 
 
